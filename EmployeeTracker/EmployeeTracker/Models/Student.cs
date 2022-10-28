@@ -10,10 +10,10 @@ namespace EmployeeTracker.Models
     {
         [Key]
         [Required]
-        public int StudentID { get; set; }
+        public string BYUID { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string Phone { get; set; }
-        public string Employer { get; set; }
+        public string Supervisor { get; set; }
     }
 }
