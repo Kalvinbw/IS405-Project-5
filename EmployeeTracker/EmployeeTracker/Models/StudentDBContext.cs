@@ -13,6 +13,6 @@ namespace EmployeeTracker.Models
 
         }
 
-        public DbSet<Student> StudentData { get; set; }
+        public DbSet<Student> Student { get; set; }
     }
 }

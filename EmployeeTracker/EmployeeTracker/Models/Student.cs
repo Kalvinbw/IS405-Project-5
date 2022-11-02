@@ -20,11 +20,10 @@ namespace EmployeeTracker.Models
         public string Semester { get; set; }
         public string Year { get; set; }
         public string Phone { get; set; }
-        public string PositionType { get; set; }
-        public string ClassName { get; set; }
+        public int PositionType { get; set; }
         public string ClassCode { get; set; }
         public string EmplRecord { get; set; }
-        public string Supervisor { get; set; }
+        public int Supervisor { get; set; }
         public string HireDate { get; set; }
         public string PayRate { get; set; }
         public string LastPayIncrease { get; set; }

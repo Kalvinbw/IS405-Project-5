@@ -21,7 +21,7 @@ namespace EmployeeTracker.Controllers
 
         public IActionResult Index()
         {
-            var dataSet = _context.StudentData.ToList();
+            var dataSet = _context.Student.ToList();
             return View(dataSet);
         }
     }
