@@ -1,5 +1,6 @@
 ﻿using EmployeeTracker.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
@@ -21,7 +22,9 @@ namespace EmployeeTracker.Controllers
 
         public IActionResult Index()
         {
-            var dataSet = _context.Student.ToList();
+            var dataSet = _context.Student
+                .Include(x => x.Class)
+                .ToList();
             return View(dataSet);
         }
     }

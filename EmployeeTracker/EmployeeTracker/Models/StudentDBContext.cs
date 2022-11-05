@@ -14,5 +14,8 @@ namespace EmployeeTracker.Models
         }
 
         public DbSet<Student> Student { get; set; }
+        public DbSet<Class> Class { get; set; }
+        public DbSet<Position> Position { get; set; }
+        public DbSet<Supervisor> Supervisor { get; set; }
     }
 }

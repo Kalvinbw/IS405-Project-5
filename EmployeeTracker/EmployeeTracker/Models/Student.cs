@@ -20,10 +20,16 @@ namespace EmployeeTracker.Models
         public string Semester { get; set; }
         public string Year { get; set; }
         public string Phone { get; set; }
-        public int PositionType { get; set; }
+        //foreign key relationship
+        public int PositionId { get; set; }
+        public Position Position { get; set; }
+        //foreign key relationship
         public string ClassCode { get; set; }
+        public Class Class { get; set; }
         public string EmplRecord { get; set; }
-        public int Supervisor { get; set; }
+        //foreign key relationship
+        public int SupervisorId { get; set; }
+        public Supervisor Supervisor { get; set; }
         public string HireDate { get; set; }
         public string PayRate { get; set; }
         public string LastPayIncrease { get; set; }
