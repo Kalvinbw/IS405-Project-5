@@ -1,5 +1,95 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
+﻿
 @{
+    ViewData["Title"] = "Student List";
 }
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+        
+    </style>
+</head>
+@model EmployeeTracker.Models.ViewModels.StudentViewModel
+<div class="container" style="overflow-x:auto;">
+    <table class="table table-bordered table-striped">
+        <thead class="font-weight-bold">
+            <tr>
+                <td>BYU ID</td>
+                <td>First Name</td>
+                <td>Last Name</td>
+                <td>International</td>
+                <td>Gender</td>
+                <td>Email</td>
+                <td>Expected Hours per Week</td>
+                <td>Semester</td>
+                <td>Year</td>
+                <td>Phone</td>
+                @*<td>Position</td>*@
+                <td>ClassCode</td>
+                @*<td>ClassName</td>*@
+                <td>Empl Record</td>
+                @*<td>Supervisor First</td>*@
+                @*<td>Supervisor Last</td>*@
+                <td>Hire Date</td>
+                <td>Pay Rate</td>
+                <td>Last Pay Increase</td>
+                <td>Pay Increase Amount</td>
+                <td>Pay Increase Date</td>
+                <td>Year in Program</td>
+                <td>Pay Grad Tuition</td>
+                <td>Name Change Completed</td>
+                <td>Notes</td>
+                <td>Terminated</td>
+                <td>Termination Date</td>
+                <td>Q Survey Sent</td>
+                <td>Submitted E Form</td>
+                <td>E Form Submission Date</td>
+                <td>Authorization to Work Received</td>
+                <td>Authorization to Work Email Sent Date</td>
+                <td>BYU Name</td>
+            </tr>
+        </thead>
+
+        <tbody style="overflow-y:auto;">
+            @foreach (var x in Model.Students)
+            {
+            <tr>
+                <td>@x.BYUID</td>
+                <td>@x.FirstName</td>
+                <td>@x.LastName</td>
+                <td>@x.International</td>
+                <td>@x.Gender</td>
+                <td>@x.Email</td>
+                <td>@x.Expected_Hours_per_Week</td>
+                <td>@x.Semester</td>
+                <td>@x.Year</td>
+                <td>@x.Phone</td>
+                @*<td>@x.Position.positionname</td>*@
+                <td>@x.ClassCode</td>
+                @*<td>@x.Class.classname</td>*@
+                <td>@x.EmplRecord</td>
+                @*<td>@x.Supervisor.firstname</td>*@
+                @*<td>@x.Supervisor.lastname</td>*@
+                <td>@x.HireDate</td>
+                <td>@x.PayRate </td>
+                <td>@x.LastPayIncrease</td>
+                <td>@x.PayIncreaseAmount</td>
+                <td>@x.PayIncreaseDate</td>
+                <td>@x.YearInProgram</td>
+                <td>@x.PayGradTuition</td>
+                <td>@x.NameChangeCompleted</td>
+                <td>@x.Notes</td>
+                <td>@x.TerminatedYN</td>
+                <td>@x.TerminationDate</td>
+                <td>@x.QualtricsSurveySent</td>
+                <td>@x.SubmittedEForm</td>
+                <td>@x.EFormSubmissionDate</td>
+                <td>@x.AuthorizationtoWorkReceived</td>
+                <td>@x.AuthorizationtoWorkEmailSentDate</td>
+                <td>@x.BYUName</td>
+            </tr>
+            }
+        </tbody>
+    </table>
+</div>

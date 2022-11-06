@@ -31,6 +31,7 @@ namespace EmployeeTracker
                options.UseMySql(Configuration["ConnectionStrings:MySQLConnection"]);
 
            });
+            services.AddScoped<IStudentRepository, EFStudentRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

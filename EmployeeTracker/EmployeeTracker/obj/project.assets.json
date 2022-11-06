@@ -871,19 +871,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\alici\\.nuget\\packages\\": {}
+    "C:\\Users\\willp\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\alici\\Documents\\GitHub\\IS405-Project-5\\EmployeeTracker\\EmployeeTracker\\EmployeeTracker.csproj",
+      "projectUniqueName": "C:\\Users\\willp\\Source\\Repos\\IS405-Project-5\\EmployeeTracker\\EmployeeTracker\\EmployeeTracker.csproj",
       "projectName": "EmployeeTracker",
-      "projectPath": "C:\\Users\\alici\\Documents\\GitHub\\IS405-Project-5\\EmployeeTracker\\EmployeeTracker\\EmployeeTracker.csproj",
-      "packagesPath": "C:\\Users\\alici\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\alici\\Documents\\GitHub\\IS405-Project-5\\EmployeeTracker\\EmployeeTracker\\obj\\",
+      "projectPath": "C:\\Users\\willp\\Source\\Repos\\IS405-Project-5\\EmployeeTracker\\EmployeeTracker\\EmployeeTracker.csproj",
+      "packagesPath": "C:\\Users\\willp\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\willp\\Source\\Repos\\IS405-Project-5\\EmployeeTracker\\EmployeeTracker\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\alici\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\willp\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

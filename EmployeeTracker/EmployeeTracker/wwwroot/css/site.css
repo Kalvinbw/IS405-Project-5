@@ -1,6 +1,24 @@
 ﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
 for details on configuring this project to bundle and minify static web assets. */
 
+
+.fixedheight {
+    height: 50px;
+}
+.myborder {
+    border: 5px solid;
+    color: black;
+}
+
+.studtable {
+    display: block;
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+    margin: 0 auto;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
 a.navbar-brand {
   white-space: normal;
   text-align: center;
@@ -34,7 +52,9 @@ html {
     font-size: 16px;
   }
 }
-
+table, th, td {
+    border: 5px solid;
+}
 .border-top {
   border-top: 1px solid #e5e5e5;
 }
