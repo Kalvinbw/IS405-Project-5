@@ -30,6 +30,29 @@ namespace EmployeeTracker.Controllers
             return View();
         }
 
+        [HttpGet]
+        public IActionResult Form()
+        {
+            return View("Edit");
+        }
+
+        [HttpPost]
+        public IActionResult Form(Student s)
+        {
+            if (ModelState.IsValid)
+
+            {
+                _context.CreateStudent(s);
+                _context.SaveStudent(s);
+                return View("Index", s);
+            }
+            else
+            {
+                ViewBag.Student = _context.Students.ToList();
+                return View("Edit", s);
+            }
+        }
+
         public IActionResult employees()
         {
             var x = new StudentViewModel
@@ -40,6 +63,16 @@ namespace EmployeeTracker.Controllers
             };
 
             return View(x);
+        }
+
+        [HttpGet]
+        public IActionResult Edit(string byuID)
+        {
+
+            ViewBag.Students = _context.Students.ToList();
+            var studEntry = _context.Students.Single(x => x.BYUID == byuID);
+
+            return View(studEntry);
         }
     }
 }

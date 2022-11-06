@@ -114,3 +114,4 @@ C:\Users\willp\Source\Repos\IS405-Project-5\EmployeeTracker\EmployeeTracker\obj\
 C:\Users\willp\Source\Repos\IS405-Project-5\EmployeeTracker\EmployeeTracker\obj\Debug\netcoreapp3.1\EmployeeTracker.dll
 C:\Users\willp\Source\Repos\IS405-Project-5\EmployeeTracker\EmployeeTracker\obj\Debug\netcoreapp3.1\EmployeeTracker.pdb
 C:\Users\willp\Source\Repos\IS405-Project-5\EmployeeTracker\EmployeeTracker\obj\Debug\netcoreapp3.1\EmployeeTracker.genruntimeconfig.cache
+C:\Users\willp\Source\Repos\IS405-Project-5\EmployeeTracker\EmployeeTracker\obj\Debug\netcoreapp3.1\Razor\Views\Home\Edit.cshtml.g.cs

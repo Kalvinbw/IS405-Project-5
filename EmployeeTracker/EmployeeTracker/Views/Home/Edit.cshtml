@@ -1,0 +1,31 @@
+﻿@model EmployeeTracker.Models.Student
+
+<div class="container">
+        <form method="post">
+
+
+            <div asp-validation-summary="All"></div>
+
+            <label asp-for="BYUID">BYU ID:</label>
+            <input asp-for="BYUID"/><br/>
+
+            <label asp-for="FirstName">First Name:</label>
+            <input asp-for="FirstName"/><br />
+
+            <label asp-for="LastName">Last Name:</label>
+            <input asp-for="LastName"/><br />
+
+            <label asp-for="ClassCode">Class Code:</label>
+            <input asp-for="ClassCode" /><br />
+
+            @*<label asp-for="EmailAddress">Email Address:</label>
+            <input asp-for="EmailAddress" /><br />
+
+            <label asp-for="PhoneNumber">Phone Number:</label>
+            <input asp-for="PhoneNumber" /><br />*@
+
+
+            <button asp-action="Form" type="submit">Save</button>
+        
+        </form>
+</div>
